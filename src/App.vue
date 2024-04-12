@@ -24,7 +24,7 @@ onErrorCaptured((err, instance, info) => {
       enter-to-class="translate-x-0"
       leave-active-class="-translate-x-full"
     >
-      <nav id="mainNav" v-show="menuIsOpen">
+      <nav id="mainNav" v-show="menuIsOpen" class="bg-pink-50 w-14">
         <ul>
           <li><a href="#">item 1</a></li>
           <li><a href="#">item 2</a></li>
