@@ -1,7 +1,13 @@
 <script setup lang="ts">
-//
+import { ref } from 'vue'
 </script>
 
 <template>
-  <h1 class="text-2xl">Bonjour monde !</h1>
+  <button
+    aria-controls="mainNav"
+    aria-expanded="true"
+    class="rounded-full border-2 border-red-600 bg-red-300 px-2"
+  >
+    menu
+  </button>
 </template>
