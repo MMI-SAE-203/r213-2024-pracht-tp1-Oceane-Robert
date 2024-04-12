@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { onErrorCaptured } from 'vue'
+import { onErrorCaptured, ref } from 'vue'
+import { RouterLink, RouterView } from 'vue-router/auto'
 const menuIsOpen = ref(false)
 onErrorCaptured((err, instance, info) => {
   console.error('erreur : ', err, '\ninfo : ', info, '\ncomposant : ', instance)
@@ -16,7 +17,7 @@ onErrorCaptured((err, instance, info) => {
   >
     menu
   </button>
-  <nav id="mainNav">
+  <nav id="mainNav" v-show="menuIsOpen" >
     <ul>
       <li><a href="#">item 1</a></li>
       <li><a href="#">item 2</a></li>
