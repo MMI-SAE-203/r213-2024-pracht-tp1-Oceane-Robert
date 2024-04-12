@@ -32,6 +32,7 @@ onErrorCaptured((err, instance, info) => {
         </ul>
       </nav>
     </Transition>
+    <RouterLink to="/">Accueil</RouterLink>
   </header>
   <RouterView v-slot="{ Component }">
     <Suspense>
