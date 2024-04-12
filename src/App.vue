@@ -13,7 +13,7 @@ onErrorCaptured((err, instance, info) => {
     <button
     aria-controls="mainNav"
     aria-expanded="true"
-    class="rounded-full border-2 border-red-600 bg-red-300 px-2"
+    class="rounded-xl  bg-red-300 px-5 py-2 mx-2 my-5"
     @pointerdown="menuIsOpen = !menuIsOpen"
   >
     menu
@@ -24,7 +24,7 @@ onErrorCaptured((err, instance, info) => {
       enter-to-class="translate-x-0"
       leave-active-class="-translate-x-full"
     >
-      <nav id="mainNav" v-show="menuIsOpen" class="bg-pink-50 w-14">
+      <nav id="mainNav" v-show="menuIsOpen" class="bg-pink-50 w-14 mx-4">
         <ul>
           <li><a href="#">item 1</a></li>
           <li><a href="#">item 2</a></li>
@@ -32,8 +32,8 @@ onErrorCaptured((err, instance, info) => {
         </ul>
       </nav>
     </Transition>
-    <RouterLink to="/">Accordéon</RouterLink>
-    <RouterLink to="/boucle">Boucle</RouterLink>
+    <RouterLink to="/" class="mx-2">Accordéon</RouterLink>
+    <RouterLink to="/boucle" class="mx-2">Boucle</RouterLink>
   </header>
   <RouterView v-slot="{ Component }">
     <Suspense>

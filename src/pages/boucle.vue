@@ -31,8 +31,8 @@ const sectionsData = [
 
 <template>
       <section v-for="({ label, texte }, key) of sectionsData" :v-key="key">
-    <button @pointerdown="openSection = openSection === key ? null : key">
-        <pre class="font-mono"> {{ label }}</pre>
+    <button @pointerdown= " openSection = openSection === key ? null : key">
+        <pre class="font-mono bg-slate-500"> {{ label }}</pre>
     </button>
     <p v-show="openSection === key">
     <pre class="font-mono">key : {{ key }}</pre>
